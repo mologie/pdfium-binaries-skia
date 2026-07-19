@@ -4,6 +4,11 @@
 
 # Pre-compiled binaries of PDFium
 
+> **This is a fork!** The upstream repo likely provides more up-to-date
+> binaries. This fork was created for Muntin with Skia enabled, so that we get
+> consistent font rendering across PDF and other Skia-rendered content. If you
+> do not care about how fonts look (Skia's look nicer to me), use upstream.
+
 [![Patches](https://github.com/bblanchon/pdfium-binaries/actions/workflows/patch.yml/badge.svg?branch=master)](https://github.com/bblanchon/pdfium-binaries/actions/workflows/patch.yml)
 [![Total downloads](https://img.shields.io/github/downloads/bblanchon/pdfium-binaries/total)](https://github.com/bblanchon/pdfium-binaries/releases/)
 

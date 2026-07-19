@@ -8,6 +8,7 @@ TARGET_ENVIRONMENT=${PDFium_TARGET_ENVIRONMENT:-}
 ENABLE_V8=${PDFium_ENABLE_V8:-false}
 IS_DEBUG=${PDFium_IS_DEBUG:-false}
 BUILD_TYPE=${PDFium_BUILD_TYPE:-shared}
+USE_SKIA=${PDFium_USE_SKIA:-true}
 
 mkdir -p "$BUILD"
 
@@ -21,6 +22,7 @@ mkdir -p "$BUILD"
   echo "pdf_enable_xfa = $ENABLE_V8"
   echo "treat_warnings_as_errors = false"
   echo "is_component_build = false"
+  echo "pdf_use_skia = $USE_SKIA"
 
   if [ "$ENABLE_V8" == "true" ]; then
     echo "v8_use_external_startup_data = false"
